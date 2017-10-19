@@ -1,0 +1,9 @@
+#PBS -N had43ens_graphem_4step_file99
+#PBS -l mem=46gb
+#PBS -k oe
+cd /home/scec-02/avaccaro/HadCRUT4.3/ensemble/
+/usr/local/MATLAB/R2014b/bin/matlab -nodesktop -nosplash > ./out/had43ens_graphem_4step_file99.out << EOF
+filenum = 99
+had43ens_graphem_4step
+exit
+EOF
